@@ -48,7 +48,7 @@ color: rgb(255, 255, 255);</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLineEdit" name="edtCaracteres">
+   <widget class="QLineEdit" name="editCaracteres">
     <property name="geometry">
      <rect>
       <x>190</x>
