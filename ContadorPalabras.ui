@@ -24,8 +24,8 @@ QLabel{
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>30</y>
+      <x>160</x>
+      <y>90</y>
       <width>511</width>
       <height>51</height>
      </rect>
@@ -51,8 +51,8 @@ color: rgb(255, 255, 255);</string>
    <widget class="QLineEdit" name="editCaracteres">
     <property name="geometry">
      <rect>
-      <x>190</x>
-      <y>100</y>
+      <x>210</x>
+      <y>170</y>
       <width>421</width>
       <height>121</height>
      </rect>
@@ -95,8 +95,8 @@ background-color: rgb(255, 0, 0);</string>
    <widget class="QLabel" name="tvPalabras">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>270</y>
+      <x>50</x>
+      <y>330</y>
       <width>291</width>
       <height>61</height>
      </rect>
@@ -122,8 +122,8 @@ background-color: rgb(0, 0, 0);</string>
    <widget class="QLabel" name="tvCaracteres">
     <property name="geometry">
      <rect>
-      <x>400</x>
-      <y>280</y>
+      <x>420</x>
+      <y>340</y>
       <width>311</width>
       <height>41</height>
      </rect>
@@ -141,6 +141,33 @@ background-color: rgb(0, 0, 0);</string>
     </property>
     <property name="text">
      <string>caracteras=0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="tvCaracteres_2">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>30</y>
+      <width>431</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Roman</family>
+      <pointsize>22</pointsize>
+      <italic>true</italic>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>PROYECTO MANUEL Y KAREN</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
