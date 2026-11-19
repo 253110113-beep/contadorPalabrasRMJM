@@ -9,21 +9,27 @@ class ContadorPalabras(QtWidgets.QMainWindow):
         self.btnContar.clicked.connect(self.contarPalabras)
 
     def contarPalabras(self):
-        # Recupera el texto (usa .toPlainText() si es QTextEdit)
+        # Recupera el texto 
         texto = self.editCaracteres.text()
         
         # Separa las palabras
         textoSeparado = texto.split()
-        print(textoSeparado)  # Sin comillas para ver la lista real
+        print(textoSeparado)  
         
         # Contar las palabras y caracteres
+        cantidadPalabras = len (textoSeparado)
+        print("Cantidad de palabras:", cantidadPalabras)
         num_palabras = len(textoSeparado)
+        self.tvPalabras.setText(f'palabras:{cantidadPalabras}')
         num_caracteres = len(texto)
+        totalCaracteres=0
+        for palabra in textoSeparado:
+            totalCaracteres += len(palabra)
+        totalCaracteres
+        self.tvCaracteres.setText(f'caracteres:{totalCaracteres}')
         
         print("Se ha presionado el botón")
-        print(f"Palabras: {num_palabras}")
-        print(f"Caracteres: {num_caracteres}")
-
+       
 app = QtWidgets.QApplication(sys.argv)
 ventana = ContadorPalabras()
 ventana.show()
